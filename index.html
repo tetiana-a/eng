@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Курсы Английского Языка</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #000000;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    section {
+      margin: 40px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      animation: slideIn 1s forwards;
+    }
+    section h2 {
+      color: #4CAF50;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    section h3 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    section p, ul {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+    .cta-button:hover {
+      background-color: #45a049;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out 1s forwards;
+    }
+
+    /* Анимация */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Хочешь уверенно говорить на английском?</h1>
+  <p>Присоединяйся к нашим курсам!</p>
+</header>
+
+<section>
+  <h2>Что вас ждет на наших курсах?</h2>
+  <ul>
+    <li><strong>Индивидуальный подход:</strong> занятия, которые соответствуют вашему уровню и целям.</li>
+    <li><strong>Гибкость:</strong> выбирайте удобное время для занятий.</li>
+    <li><strong>Разговорная практика:</strong> акцент на развитие разговорных навыков.</li>
+    <li><strong>Слушание, чтение, письмо:</strong> обучение всем аспектам языка.</li>
+    <li><strong>Доступные материалы:</strong> интересные уроки, онлайн-ресурсы и упражнения.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Почему наши курсы?</h2>
+  <ul>
+    <li><strong>Опытные преподаватели</strong> с международными сертификатами.</li>
+    <li><strong>Современные методики обучения,</strong> ориентированные на реальные нужды.</li>
+    <li><strong>Удобное онлайн-обучение</strong> — учитесь из любой точки мира.</li>
+    <li><strong>Возможность пройти тестирование</strong> и получить сертификат.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Цены:</h2>
+  <ul>
+    <li><strong>Начальный уровень (A1-A2)</strong> — 5000 руб. за месяц.</li>
+    <li><strong>Средний уровень (B1-B2)</strong> — 7000 руб. за месяц.</li>
+    <li><strong>Продвинутый уровень (C1)</strong> — 9000 руб. за месяц.</li>
+    <li><strong>Разговорный курс</strong> — 6000 руб. за месяц.</li>
+    <li><strong>Индивидуальные занятия</strong> — 1000 руб. за 1 занятие.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Контакты:</h2>
+  <p>📞 Телефон: +7 123 456 7890</p>
+  <p>📧 Email: <a href="mailto:info@englishcourses.ru">info@englishcourses.ru</a></p>
+  <p>🌐 Сайт: <a href="http://www.englishcourses.ru" target="_blank">www.englishcourses.ru</a></p>
+  <p>📍 Адрес: ул. Примерная, д. 1, офис 101</p>
+</section>
+
+<section>
+  <h3><a href="mailto:info@englishcourses.ru" class="cta-button">Запишитесь на курс!</a></h3>
+  
+  
+</section>
+
+ 
+
+<footer>
+  <p>Не упустите шанс! Начните обучение сегодня и сделайте шаг навстречу успешному будущему!</p>
+</footer>
+
+<script>
+  // Добавление задержки анимации для всех секций
+  window.addEventListener('load', () => {
+    const sections = document.querySelectorAll('section');
+    sections.forEach((section, index) => {
+      setTimeout(() => {
+        section.style.opacity = 1;
+      }, index * 500); // Задержка для плавности
+    });
+  });
+</script>
+
+</body>
+</html>
